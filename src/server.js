@@ -1,8 +1,4 @@
 const { PORT } = require("./config/");
-const port = process.env.PORT || 3000; // Use the Heroku-provided port or a default port like 3000
-server.listen(port, () => {
-  console.log(`Server is listening on port ${port}`);
-});
 
 const { createFastifyInstance } = require("./createFastifyInstance");
 const { crons } = require("./modules/crons/crons");
